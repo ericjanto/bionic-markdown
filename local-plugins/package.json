@@ -1,0 +1,9 @@
+{
+  "name": "md-to-bionic-unified-plugin",
+  "version": "1.0.0",
+  "description": "Custom plugin for the unified processor",
+  "type": "module",
+  "main": "md-to-bionic.js",
+  "author": "Eric Janto <e.janto@gmx.de>",
+  "license": "MIT"
+}
