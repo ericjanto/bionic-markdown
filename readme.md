@@ -45,5 +45,5 @@ Frontmatter fields are ignored by default.
 This package is not actively maintained. You are welcome to contribute but active development of this package cannot be guaranteed.
 
 Good first pull requests:
-- Add an option to use the real API endpoint (will require parsing an HAST, convert it to MDAST and serialise it)
+- Add an option to use the real API endpoint (will require parsing a HAST, convert it to MDAST and serialise it)
 - Migrate to TypeScript
