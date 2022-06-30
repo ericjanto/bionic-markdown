@@ -2,9 +2,26 @@
 
 bionic-markdown enabels the manipulation of Markdown files for [bionic reading](https://bionic-reading.com/). More specifically, it will extract. Its main functionality is centered around [text-vide](https://github.com/Gumball12/text-vide).
 
+## Installation
+
+You can add this package to your project using npm or yarn:
+
+```bash
+npm install bionic-markdown
+```
+```bash
+yarn add bionic-markdown
+```
+
 ## Usage
 
 ```js
+import bionicifyMarkdown from 'bionic-markdown'
+
+const md = 'This is some markdown'
+
+console.log(bionicifyMarkdown(md))
+// log: '**Thi**s **i**s **som**e **markdo**wn\n'
 ```
 
 ## Caveats
@@ -21,6 +38,8 @@ const invalid_element_indicators = {
 ```
 
 The two table options account for the differences of formatting tools.
+
+Frontmatter fields are ignored by default.
 
 ## Contributing
 This package is not actively maintained. You are welcome to contribute but active development of this package cannot be guaranteed.

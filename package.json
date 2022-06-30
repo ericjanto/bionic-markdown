@@ -4,6 +4,7 @@
   "description": "convert markdown into bionic markdown",
   "type": "module",
   "main": "index.js",
+  "keywords": [ "bionic", "bionic-reading", "markdown", "AST", "MAST" ],
   "repository": "https://github.com/ericjanto/bionic-markdown.git",
   "author": "Eric Janto <e.janto@gmx.de>",
   "license": "MIT",
