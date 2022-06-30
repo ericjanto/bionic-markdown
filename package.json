@@ -8,16 +8,11 @@
   "author": "Eric Janto <e.janto@gmx.de>",
   "license": "MIT",
   "dependencies": {
-    "prettier": "^2.7.1",
     "remark-frontmatter": "^4.0.1",
     "remark-parse": "^10.0.1",
     "remark-stringify": "^10.0.2",
     "text-vide": "^1.5.0",
     "unified": "^10.1.2",
     "unist-util-visit": "^4.1.0"
-  },
-  "scripts": {
-    "dev": "node index.js",
-    "format": "prettier --write ."
   }
 }
