@@ -13,7 +13,11 @@ function bionicifyMarkdown(md) {
     .use(remarkFrontmatter)
     .processSync(md);
 
-  const markdownContent = vFile.value.replace(/\\\*/g, "*").replace(/\\\[/g, '[');
+  const markdownContent = vFile.value
+    .replace(/\\\*/g, "*")
+    .replace(/\\\[/g, '[')
+    .replace(/\*\*\*/g, '_**')
+    .replace(/[^\*]\*/g, '_');
   return markdownContent;
 }
 
