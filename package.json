@@ -1,6 +1,6 @@
 {
   "name": "bionic-markdown",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "convert markdown into bionic-reading flavoured markdown",
   "type": "module",
   "main": "index.js",
