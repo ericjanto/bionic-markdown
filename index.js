@@ -17,7 +17,7 @@ function bionicifyMarkdown(md) {
     .replace(/\\\*/g, "*")
     .replace(/\\\[/g, '[')
     .replace(/\*\*\*/g, '_**')
-    .replace(/[^\*]\*/g, '_');
+    .replace(/(?<!\*)\*{1}(?!\*)/g, '_');
   return markdownContent;
 }
 
