@@ -6,7 +6,7 @@ export default (options) => (tree) => {
     tree,
     (node) => node.type === "text" && !containsInvalidElement(node.value),
     (node) => {
-      node.value = textVide(node.value, { sep: "**" });
+      node.value = textVide(node.value, { sep: "__" });
     }
   );
 };

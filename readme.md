@@ -9,6 +9,7 @@ You can add this package to your project using npm or yarn:
 ```bash
 npm install bionic-markdown
 ```
+
 ```bash
 yarn add bionic-markdown
 ```
@@ -16,11 +17,11 @@ yarn add bionic-markdown
 ## Usage
 
 ```js
-import bionicifyMarkdown from 'bionic-markdown'
+import bionicifyMarkdown from "bionic-markdown";
 
-const md = 'This is some markdown'
+const md = "This is some markdown";
 
-console.log(bionicifyMarkdown(md))
+console.log(bionicifyMarkdown(md));
 // log: '**Thi**s **i**s **som**e **markdo**wn\n'
 ```
 
@@ -42,8 +43,10 @@ The two table options account for the differences of formatting tools.
 Frontmatter fields are ignored by default.
 
 ## Contributing
+
 This package is not actively maintained. You are welcome to contribute but active development of this package cannot be guaranteed.
 
 Good first pull requests:
+
 - Add an option to use the real API endpoint (will require parsing a HAST, convert it to MDAST and serialise it)
 - Migrate to TypeScript

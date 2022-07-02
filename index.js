@@ -14,10 +14,8 @@ function bionicifyMarkdown(md) {
     .processSync(md);
 
   const markdownContent = vFile.value
-    .replace(/\\\*/g, "*")
-    .replace(/\\\[/g, '[')
-    .replace(/\*\*\*/g, '_**')
-    .replace(/(?<!\*)\*{1}(?!\*)/g, '_');
+    .replace(/\\\_/g, "_")
+    .replace(/\\\[/g, "[");
   return markdownContent;
 }
 
