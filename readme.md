@@ -25,6 +25,42 @@ console.log(bionicifyMarkdown(md));
 // log: '**Thi**s **i**s **som**e **markdo**wn\n'
 ```
 
+## Options
+Running the package without options will return the default response from the [textVide](https://www.npmjs.com/package/text-vide) package, but this doesn't always play well with markdown parsers. 
+
+You can pass optional flags to run custom regex functions that will switch out the textVide default response with a slightly improved underscore strategy or with an asterick strategy. 
+```js
+import bionicifyMarkdown from "bionic-markdown";
+
+const md = "This is some markdown";
+
+// Optional flags to use either 
+options = {
+  useAsterick: true,
+  useUnderscore: false
+}
+
+const markdown = bionicifyMarkdown(md, options);
+```
+
+This is what these options are doing under the hood:
+```js
+// bionic-markdown/index.js
+if (useUnderscore) {
+  const markdownContent = vFile.value
+    .replace(/\\\_/g, "_")
+    .replace(/\\\[/g, "[");
+  return markdownContent;
+}
+
+if (useAsterick) {
+  const markdownContent = vFile.value
+    .replace(/\\\_/g, "*")
+    .replace(/\\\[/g, "[");
+  return markdownContent;
+}
+```
+
 ## Caveats
 
 The functionality of this package is tailored towards its authors needs. As such, any MAST nodes with text values containing any of the elements below will not be converted:
