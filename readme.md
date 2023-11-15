@@ -27,7 +27,7 @@ console.log(bionicifyMarkdown(md));
 
 ## Caveats
 
-The functionality of this package is tailored towards its authors needs. As such, any MAST nodes with text values containing any of the elements below will not be converted:
+The functionality of this package is tailored towards its author's needs. As such, any MAST nodes with text values containing any of the elements below will not be converted:
 
 ```js
 const invalid_element_indicators = {
