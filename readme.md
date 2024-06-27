@@ -1,6 +1,6 @@
 # Bionic Markdown
 
-bionic-markdown enabels the manipulation of Markdown files for [bionic reading](https://bionic-reading.com/). More specifically, it will parse Markdown into an AST and extract paragraph text nodes. Those text values get changed into bionic text by using [text-vide](https://github.com/Gumball12/text-vide).
+bionic-markdown enables the manipulation of Markdown files for [bionic reading](https://bionic-reading.com/). More specifically, it will parse Markdown into an AST and extract paragraph text nodes. Those text values get changed into bionic text by using [text-vide](https://github.com/Gumball12/text-vide).
 
 ## Installation
 
